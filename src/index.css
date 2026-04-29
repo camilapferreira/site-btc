@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #0B1220;
+    background-color: #ffffff;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Fraunces', ui-serif, Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #e8a93c, transparent);
+  }
+
+  .chev {
+    transition: transform 0.2s ease;
+  }
+  details[open] summary .chev {
+    transform: rotate(45deg);
+  }
+}

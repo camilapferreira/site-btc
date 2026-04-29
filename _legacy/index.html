@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTC — Business Training Company | Da universidade para o mercado de elite</title>
+  <meta name="description" content="A escola de negócios que prepara universitários e recém-formados das melhores faculdades do Brasil para consultoria estratégica, mercado financeiro e indústria. Mais de 11.500 alunos formados desde 2009." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            serif: ['Fraunces', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            ink:    { 950: '#070B14', 900: '#0B1220', 800: '#111A2E', 700: '#1B2740' },
+            gold:   { 400: '#F4C24A', 500: '#E8A93C', 600: '#C8862A' },
+            sand:   { 50: '#F8F6F1', 100: '#F1ECE0' },
+          },
+          boxShadow: {
+            'soft': '0 10px 40px -15px rgba(7,11,20,0.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    .font-display { font-family: 'Fraunces', serif; letter-spacing: -0.02em; }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .marquee { animation: marquee 35s linear infinite; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .fade-up { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white text-ink-900">
+
+  <!-- ============== NAV ============== -->
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-white/80 border-b border-ink-900/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-md bg-ink-950 text-gold-400 font-display font-bold">B</span>
+        <span class="font-display font-semibold text-lg">BTC<span class="text-gold-500">.</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-800">
+        <a href="index.html" class="hover:text-gold-600">Início</a>
+        <a href="sobre-a-btc.html" class="hover:text-gold-600">Sobre a BTC</a>
+        <a href="gbp.html" class="hover:text-gold-600">GBP</a>
+        <a href="#cursos" class="hover:text-gold-600">Cursos</a>
+        <a href="#alumni" class="hover:text-gold-600">Alumni</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#cursos" class="hidden sm:inline-flex text-sm font-medium text-ink-900 hover:text-gold-600">Falar com a BTC</a>
+        <a href="gbp.html" class="inline-flex items-center gap-2 bg-ink-950 hover:bg-ink-800 text-white text-sm font-semibold px-4 py-2.5 rounded-md transition">
+          Inscreva-se
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="relative pt-32 pb-24 overflow-hidden bg-ink-950 text-white">
+    <div class="absolute inset-0 grid-bg opacity-60"></div>
+    <div class="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-gold-500/10 blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-[520px] h-[520px] rounded-full bg-blue-500/10 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-gold-400 bg-white/5 border border-white/10 rounded-full px-3 py-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+          Desde 2009 • +11.500 alunos formados
+        </div>
+        <h1 class="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.02] font-medium">
+          Da melhor universidade do país para a <span class="italic text-gold-400">elite</span> do mercado.
+        </h1>
+        <p class="mt-6 text-lg text-white/70 max-w-xl">
+          A BTC é a escola de negócios que conecta universitários e recém-formados às consultorias estratégicas, ao mercado financeiro e às maiores indústrias do Brasil — com o conteúdo que sua faculdade não ensina.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="gbp.html" class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-ink-950 font-semibold px-6 py-3.5 rounded-md transition">
+            Conheça o GBP
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="sobre-a-btc.html" class="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white font-semibold px-6 py-3.5 rounded-md transition">
+            Por que a BTC?
+          </a>
+        </div>
+
+        <!-- Quick stats -->
+        <div class="mt-14 grid grid-cols-3 gap-6 max-w-lg">
+          <div>
+            <div class="font-display text-3xl font-semibold text-gold-400">+11,5k</div>
+            <div class="text-xs text-white/60 mt-1 leading-snug">alunos formados desde 2009</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl font-semibold text-gold-400">+200</div>
+            <div class="text-xs text-white/60 mt-1 leading-snug">empresas parceiras nas seleções</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl font-semibold text-gold-400">53%</div>
+            <div class="text-xs text-white/60 mt-1 leading-snug">chegam por indicação de ex-alunos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero visual -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-soft">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80"
+               alt="Aula da BTC com jovens profissionais"
+               class="w-full h-[520px] object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent"></div>
+          <!-- Floating card -->
+          <div class="absolute left-5 right-5 bottom-5 bg-white/95 backdrop-blur rounded-xl p-5 text-ink-900">
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img class="w-9 h-9 rounded-full border-2 border-white" src="https://i.pravatar.cc/80?img=11" alt="" />
+                <img class="w-9 h-9 rounded-full border-2 border-white" src="https://i.pravatar.cc/80?img=32" alt="" />
+                <img class="w-9 h-9 rounded-full border-2 border-white" src="https://i.pravatar.cc/80?img=45" alt="" />
+              </div>
+              <div class="text-sm">
+                <div class="font-semibold">Próxima turma do GBP</div>
+                <div class="text-ink-700/70 text-xs">Inscrições abertas • vagas limitadas</div>
+              </div>
+              <a href="gbp.html" class="ml-auto text-sm font-semibold text-gold-600 hover:text-gold-500">Ver →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TRUST BAR ============== -->
+  <section class="bg-white border-b border-ink-900/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-10">
+      <p class="text-center text-xs font-semibold tracking-widest uppercase text-ink-700/60">
+        Nossos alunos vêm das principais universidades — e vão para as melhores empresas
+      </p>
+      <div class="mt-8 overflow-hidden">
+        <div class="flex gap-12 marquee items-center text-ink-900/60">
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">USP</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">FGV</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Insper</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Unicamp</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">PUC-Rio</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">ITA</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">UFRJ</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">UFMG</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Ibmec</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Mackenzie</span>
+          <!-- duplicate for loop -->
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">USP</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">FGV</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Insper</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Unicamp</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">PUC-Rio</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">ITA</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">UFRJ</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">UFMG</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Ibmec</span>
+          <span class="font-display text-2xl font-semibold whitespace-nowrap">Mackenzie</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== O QUE TE TRAVA ============== -->
+  <section class="py-24 bg-sand-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-5">
+        <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">O problema</div>
+        <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight">
+          A faculdade não te prepara para a entrevista que você quer passar.
+        </h2>
+        <p class="mt-5 text-ink-700 text-lg">
+          Engenharia, economia, administração, direito. Você fez tudo certo — mas chega na seleção da McKinsey, do Itaú BBA ou da Ambev e percebe que faltam habilidades que ninguém te ensinou.
+        </p>
+      </div>
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+        <div class="bg-white rounded-xl p-6 border border-ink-900/5">
+          <div class="w-10 h-10 rounded-md bg-ink-950 text-gold-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold">Finanças & Valuation</h3>
+          <p class="mt-2 text-sm text-ink-700/80">Modelar uma DCF, ler um balanço, falar de WACC com fluência. O básico que separa candidatos.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-ink-900/5">
+          <div class="w-10 h-10 rounded-md bg-ink-950 text-gold-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold">Estratégia & Cases</h3>
+          <p class="mt-2 text-sm text-ink-700/80">Resolver casos sob pressão, estruturar problemas com MECE, falar a língua das consultorias.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-ink-900/5">
+          <div class="w-10 h-10 rounded-md bg-ink-950 text-gold-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold">Marketing & Mercado</h3>
+          <p class="mt-2 text-sm text-ink-700/80">Como grandes empresas pensam consumidor, marca e crescimento na prática.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-ink-900/5">
+          <div class="w-10 h-10 rounded-md bg-ink-950 text-gold-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold">Soft Skills aplicadas</h3>
+          <p class="mt-2 text-sm text-ink-700/80">Comunicação executiva, postura em entrevistas, networking que vira oportunidade real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CURSOS ============== -->
+  <section id="cursos" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">A solução</div>
+          <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight">
+            Três programas. Um caminho claro até o mercado de elite.
+          </h2>
+        </div>
+        <p class="lg:max-w-md text-ink-700">
+          Cada curso é uma etapa: do fundamento ao avançado, com instrutores que vêm de McKinsey, Bain, Itaú BBA, BTG e indústrias top.
+        </p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <!-- Card 1: GBP -->
+        <a href="gbp.html" class="group relative bg-ink-950 text-white rounded-2xl p-8 overflow-hidden transition hover:-translate-y-1">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-gold-500/20 rounded-full blur-3xl group-hover:bg-gold-500/30 transition"></div>
+          <div class="relative">
+            <div class="text-xs font-semibold tracking-widest uppercase text-gold-400">Programa carro-chefe</div>
+            <h3 class="mt-3 font-display text-3xl font-semibold">General Business Program</h3>
+            <p class="mt-2 text-white/70 text-sm">A base sólida e completa de negócios. 108h cobrindo Estratégia, Finanças, Marketing e Soft Skills com casos reais.</p>
+            <div class="mt-6 flex items-center gap-4 text-xs text-white/60">
+              <span>108 horas</span><span>•</span><span>Presencial / Live</span>
+            </div>
+            <div class="mt-8 inline-flex items-center gap-2 text-gold-400 font-semibold">
+              Ver programa
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+        <!-- Card 2: SFP -->
+        <div class="bg-sand-50 rounded-2xl p-8 border border-ink-900/5">
+          <div class="text-xs font-semibold tracking-widest uppercase text-ink-700/60">Aprofundamento</div>
+          <h3 class="mt-3 font-display text-3xl font-semibold">Strategy & Finance Program</h3>
+          <p class="mt-2 text-ink-700/80 text-sm">Para quem já tem a base e quer ir a fundo em valuation, M&A, decisões de capital e estratégia corporativa.</p>
+          <div class="mt-6 flex items-center gap-4 text-xs text-ink-700/60">
+            <span>Avançado</span><span>•</span><span>Aulas ao vivo</span>
+          </div>
+          <div class="mt-8 inline-flex items-center gap-2 text-ink-900 font-semibold">
+            Em breve detalhes
+          </div>
+        </div>
+        <!-- Card 3: Business Fundamentals -->
+        <div class="bg-sand-50 rounded-2xl p-8 border border-ink-900/5">
+          <div class="text-xs font-semibold tracking-widest uppercase text-ink-700/60">Acelerador</div>
+          <h3 class="mt-3 font-display text-3xl font-semibold">Business Fundamentals</h3>
+          <p class="mt-2 text-ink-700/80 text-sm">3 horas de essencial para destravar a primeira fase de processos seletivos. On-demand, comece agora.</p>
+          <div class="mt-6 flex items-center gap-4 text-xs text-ink-700/60">
+            <span>3 horas</span><span>•</span><span>On-demand</span>
+          </div>
+          <div class="mt-8 inline-flex items-center gap-2 text-ink-900 font-semibold">
+            Comece em 5 min
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== METODOLOGIA ============== -->
+  <section class="py-24 bg-ink-950 text-white relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-40"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-5">
+        <div class="text-xs font-semibold tracking-widest uppercase text-gold-400">Metodologia</div>
+        <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight">
+          Sala de aula que cheira a corredor de consultoria.
+        </h2>
+        <p class="mt-5 text-white/70">
+          Esquece a aula expositiva. Aqui você resolve cases reais, defende suas hipóteses, leva crítica direta e sai com bagagem para sentar do outro lado da mesa em uma entrevista.
+        </p>
+      </div>
+
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden">
+        <div class="bg-ink-950 p-7">
+          <div class="font-display text-5xl font-semibold text-gold-400">01</div>
+          <h3 class="mt-3 font-semibold">Casos reais de mercado</h3>
+          <p class="mt-2 text-sm text-white/70">Problemas que aconteceram em empresas brasileiras nos últimos 12 meses.</p>
+        </div>
+        <div class="bg-ink-950 p-7">
+          <div class="font-display text-5xl font-semibold text-gold-400">02</div>
+          <h3 class="mt-3 font-semibold">Instrutores do mercado</h3>
+          <p class="mt-2 text-sm text-white/70">Profissionais ativos em McKinsey, BCG, BTG, Itaú e indústria de ponta.</p>
+        </div>
+        <div class="bg-ink-950 p-7">
+          <div class="font-display text-5xl font-semibold text-gold-400">03</div>
+          <h3 class="mt-3 font-semibold">Networking que vira oferta</h3>
+          <p class="mt-2 text-sm text-white/70">Acesso à rede de +11.500 alumni e processos seletivos exclusivos via BTC Headhunter.</p>
+        </div>
+        <div class="bg-ink-950 p-7">
+          <div class="font-display text-5xl font-semibold text-gold-400">04</div>
+          <h3 class="mt-3 font-semibold">Feedback individual</h3>
+          <p class="mt-2 text-sm text-white/70">Cada aluno é acompanhado de perto. Aqui ninguém é número de matrícula.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== DEPOIMENTOS ============== -->
+  <section id="alumni" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">Alumni</div>
+          <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight">
+            Eles passaram por aqui antes de chegar lá.
+          </h2>
+        </div>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-ink-900/10 p-7 bg-sand-50">
+          <div class="font-display text-2xl text-ink-900 leading-snug">"O GBP me deu vocabulário e segurança para passar nas três fases da McKinsey ainda no 7º semestre."</div>
+          <div class="mt-6 flex items-center gap-3">
+            <img class="w-11 h-11 rounded-full" src="https://i.pravatar.cc/100?img=15" alt="" />
+            <div>
+              <div class="text-sm font-semibold">Mariana A.</div>
+              <div class="text-xs text-ink-700/60">Business Analyst, McKinsey • USP Engenharia</div>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-ink-900/10 p-7 bg-sand-50">
+          <div class="font-display text-2xl text-ink-900 leading-snug">"Saí da BTC sabendo modelar valuation. Foi o que fez diferença na entrevista do BTG."</div>
+          <div class="mt-6 flex items-center gap-3">
+            <img class="w-11 h-11 rounded-full" src="https://i.pravatar.cc/100?img=33" alt="" />
+            <div>
+              <div class="text-sm font-semibold">Pedro V.</div>
+              <div class="text-xs text-ink-700/60">Analista, BTG Pactual • FGV Economia</div>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-ink-900/10 p-7 bg-sand-50">
+          <div class="font-display text-2xl text-ink-900 leading-snug">"Mais que conteúdo: a rede da BTC me abriu a porta do trainee da Ambev."</div>
+          <div class="mt-6 flex items-center gap-3">
+            <img class="w-11 h-11 rounded-full" src="https://i.pravatar.cc/100?img=47" alt="" />
+            <div>
+              <div class="text-sm font-semibold">Letícia C.</div>
+              <div class="text-xs text-ink-700/60">Trainee, Ambev • Insper Administração</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== EMPRESAS ============== -->
+  <section class="py-20 bg-sand-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center max-w-2xl mx-auto">
+        <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">Para onde nossos alunos vão</div>
+        <h2 class="mt-3 font-display text-3xl sm:text-4xl font-medium">As empresas que mais contratam alumni BTC</h2>
+      </div>
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <!-- Logos as text marks for design coherence -->
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">McKinsey</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">Bain</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">BCG</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">Itaú BBA</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">BTG</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">XP</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">Ambev</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">Vale</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">Stone</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">Nubank</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">JP Morgan</div>
+        <div class="flex items-center justify-center bg-white rounded-xl py-6 font-display font-semibold text-lg text-ink-900/70">Suzano</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA FINAL ============== -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10">
+      <div class="relative overflow-hidden rounded-3xl bg-ink-950 text-white p-10 sm:p-16">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-gold-500/15 rounded-full blur-3xl"></div>
+        <div class="relative max-w-2xl">
+          <h2 class="font-display text-4xl sm:text-5xl font-medium leading-tight">
+            A próxima entrevista pode ser a sua.
+          </h2>
+          <p class="mt-5 text-white/70 text-lg">
+            Coloque-se à frente da sua turma. Vagas limitadas para a próxima edição do General Business Program.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="gbp.html" class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-ink-950 font-semibold px-6 py-3.5 rounded-md transition">
+              Quero me inscrever no GBP
+            </a>
+            <a href="sobre-a-btc.html" class="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white font-semibold px-6 py-3.5 rounded-md transition">
+              Falar com um consultor
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="bg-ink-950 text-white/70">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white text-ink-950 font-display font-bold">B</span>
+          <span class="font-display font-semibold text-lg text-white">BTC<span class="text-gold-500">.</span></span>
+        </div>
+        <p class="mt-5 max-w-md text-sm">
+          Business Training Company. Escola de negócios fundada em 2009 por Renato Arakaki e Rodrigo Areco. Mais de 11.500 alunos formados.
+        </p>
+      </div>
+      <div>
+        <div class="text-white font-semibold text-sm">Cursos</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="gbp.html" class="hover:text-gold-400">GBP — General Business Program</a></li>
+          <li><a href="#" class="hover:text-gold-400">Strategy & Finance</a></li>
+          <li><a href="#" class="hover:text-gold-400">Business Fundamentals</a></li>
+          <li><a href="#" class="hover:text-gold-400">In Company</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-white font-semibold text-sm">BTC</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="sobre-a-btc.html" class="hover:text-gold-400">Sobre a BTC</a></li>
+          <li><a href="#" class="hover:text-gold-400">Alumni</a></li>
+          <li><a href="#" class="hover:text-gold-400">Headhunter</a></li>
+          <li><a href="#" class="hover:text-gold-400">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs">
+        <span>© 2026 BTC — Business Training Company. Todos os direitos reservados.</span>
+        <div class="flex gap-5">
+          <a href="#" class="hover:text-gold-400">Termos</a>
+          <a href="#" class="hover:text-gold-400">Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

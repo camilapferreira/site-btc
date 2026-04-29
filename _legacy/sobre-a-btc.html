@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre a BTC — Business Training Company</title>
+  <meta name="description" content="A história, a missão e os números da BTC: a escola de negócios que prepara universitários e recém-formados das melhores faculdades do Brasil para o mercado de elite desde 2009." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            serif: ['Fraunces', 'ui-serif', 'Georgia'],
+          },
+          colors: {
+            ink:    { 950: '#070B14', 900: '#0B1220', 800: '#111A2E', 700: '#1B2740' },
+            gold:   { 400: '#F4C24A', 500: '#E8A93C', 600: '#C8862A' },
+            sand:   { 50: '#F8F6F1', 100: '#F1ECE0' },
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    .font-display { font-family: 'Fraunces', serif; letter-spacing: -0.02em; }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    /* Timeline line */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 11px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #E8A93C, transparent);
+    }
+  </style>
+</head>
+<body class="bg-white text-ink-900">
+
+  <!-- ============== NAV ============== -->
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-white/80 border-b border-ink-900/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-md bg-ink-950 text-gold-400 font-display font-bold">B</span>
+        <span class="font-display font-semibold text-lg">BTC<span class="text-gold-500">.</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-800">
+        <a href="index.html" class="hover:text-gold-600">Início</a>
+        <a href="sobre-a-btc.html" class="text-gold-600">Sobre a BTC</a>
+        <a href="gbp.html" class="hover:text-gold-600">GBP</a>
+        <a href="index.html#cursos" class="hover:text-gold-600">Cursos</a>
+        <a href="index.html#alumni" class="hover:text-gold-600">Alumni</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#contato" class="hidden sm:inline-flex text-sm font-medium text-ink-900 hover:text-gold-600">Falar com a BTC</a>
+        <a href="gbp.html" class="inline-flex items-center gap-2 bg-ink-950 hover:bg-ink-800 text-white text-sm font-semibold px-4 py-2.5 rounded-md transition">
+          Inscreva-se
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="relative pt-36 pb-24 overflow-hidden bg-ink-950 text-white">
+    <div class="absolute inset-0 grid-bg opacity-50"></div>
+    <div class="absolute -top-32 right-0 w-[420px] h-[420px] rounded-full bg-gold-500/10 blur-3xl"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6 lg:px-10 text-center">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-gold-400 bg-white/5 border border-white/10 rounded-full px-3 py-1.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+        Sobre a BTC
+      </div>
+      <h1 class="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] font-medium">
+        Formando os profissionais de negócios <span class="italic text-gold-400">que o mercado disputa.</span>
+      </h1>
+      <p class="mt-6 max-w-3xl mx-auto text-lg text-white/70">
+        Desde 2009, a Business Training Company desenvolve em estudantes e profissionais a visão crítica e profunda de negócios que a faculdade tradicional não entrega — e que separa quem entra dos que ficam de fora dos melhores processos seletivos do Brasil.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== NÚMEROS ============== -->
+  <section class="-mt-12 mb-12 relative z-10">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="bg-white border border-ink-900/10 shadow-soft rounded-2xl p-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="font-display text-4xl font-semibold text-ink-900">+11.500</div>
+          <div class="mt-1 text-xs text-ink-700/70 uppercase tracking-wider">Alunos formados</div>
+        </div>
+        <div class="text-center border-l border-ink-900/10">
+          <div class="font-display text-4xl font-semibold text-ink-900">17 anos</div>
+          <div class="mt-1 text-xs text-ink-700/70 uppercase tracking-wider">de mercado</div>
+        </div>
+        <div class="text-center border-l border-ink-900/10">
+          <div class="font-display text-4xl font-semibold text-ink-900">53%</div>
+          <div class="mt-1 text-xs text-ink-700/70 uppercase tracking-wider">por indicação</div>
+        </div>
+        <div class="text-center border-l border-ink-900/10">
+          <div class="font-display text-4xl font-semibold text-ink-900">+200</div>
+          <div class="mt-1 text-xs text-ink-700/70 uppercase tracking-wider">empresas parceiras</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== HISTÓRIA ============== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-5 lg:sticky lg:top-24">
+        <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">Nossa história</div>
+        <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight">
+          Começou como uma inquietação. Virou uma escola.
+        </h2>
+        <p class="mt-5 text-ink-700 text-lg">
+          Em 2009, dois engenheiros que trabalhavam com negócios — Renato Arakaki e Rodrigo Areco — perceberam o mesmo: as melhores universidades brasileiras formavam alunos brilhantes em técnica, mas com lacunas grandes em estratégia, finanças e mentalidade de negócio. Decidiram resolver isso.
+        </p>
+        <a href="gbp.html" class="mt-8 inline-flex items-center gap-2 text-gold-600 font-semibold hover:text-gold-500">
+          Ver o curso que começou tudo
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="relative timeline pl-10 space-y-10">
+          <div>
+            <div class="absolute left-0 w-6 h-6 rounded-full bg-gold-500 border-4 border-white shadow-soft"></div>
+            <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">2009</div>
+            <h3 class="mt-1 font-display text-2xl font-semibold">Fundação da BTC</h3>
+            <p class="mt-2 text-ink-700/80">Renato e Rodrigo, recém-saídos da consultoria e do mercado, criam a Business Training Company para fechar o gap entre a universidade e o mercado.</p>
+          </div>
+          <div>
+            <div class="absolute left-0 w-6 h-6 rounded-full bg-gold-500 border-4 border-white shadow-soft"></div>
+            <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">2010</div>
+            <h3 class="mt-1 font-display text-2xl font-semibold">Primeira turma do GBP</h3>
+            <p class="mt-2 text-ink-700/80">O General Business Program estreia e nasce o formato que se tornaria referência: cases reais, instrutores do mercado, vagas limitadas.</p>
+          </div>
+          <div>
+            <div class="absolute left-0 w-6 h-6 rounded-full bg-gold-500 border-4 border-white shadow-soft"></div>
+            <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">2015</div>
+            <h3 class="mt-1 font-display text-2xl font-semibold">BTC vira referência</h3>
+            <p class="mt-2 text-ink-700/80">Mais de 4.000 alunos formados. Consultorias e bancos passam a recrutar diretamente da nossa rede de alumni.</p>
+          </div>
+          <div>
+            <div class="absolute left-0 w-6 h-6 rounded-full bg-gold-500 border-4 border-white shadow-soft"></div>
+            <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">2020</div>
+            <h3 class="mt-1 font-display text-2xl font-semibold">Expansão nacional</h3>
+            <p class="mt-2 text-ink-700/80">Aulas ao vivo levam a BTC para alunos de Norte a Sul. 15% da turma já vem de fora de São Paulo.</p>
+          </div>
+          <div>
+            <div class="absolute left-0 w-6 h-6 rounded-full bg-gold-500 border-4 border-white shadow-soft"></div>
+            <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">Hoje</div>
+            <h3 class="mt-1 font-display text-2xl font-semibold">+11.500 alunos. E contando.</h3>
+            <p class="mt-2 text-ink-700/80">Três programas, consultoria estratégica, headhunter e uma rede de alumni que abre portas todos os meses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MISSÃO / VALORES ============== -->
+  <section class="py-24 bg-sand-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="max-w-3xl">
+        <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">Missão</div>
+        <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight">
+          Desenvolver visão crítica e profunda de negócios — para decisões melhores em empresas e carreiras.
+        </h2>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-7 border border-ink-900/5">
+          <div class="w-11 h-11 rounded-md bg-ink-950 text-gold-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold">Excelência sem firula</h3>
+          <p class="mt-2 text-sm text-ink-700/80">Conteúdo denso, instrutor que entrega, ambiente que cobra. Sem teatro, sem promessa vazia.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 border border-ink-900/5">
+          <div class="w-11 h-11 rounded-md bg-ink-950 text-gold-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8c-2.21 0-4 1.79-4 4M12 16v.01"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold">Pensar antes de aplicar</h3>
+          <p class="mt-2 text-sm text-ink-700/80">A gente forma profissional que questiona o problema antes de correr para a planilha.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 border border-ink-900/5">
+          <div class="w-11 h-11 rounded-md bg-ink-950 text-gold-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold">Comunidade que abre porta</h3>
+          <p class="mt-2 text-sm text-ink-700/80">Quem termina entra para uma rede que se ajuda — recomendações, mentorias, vagas exclusivas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FUNDADORES ============== -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">Fundadores</div>
+      <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight max-w-3xl">
+        Quem construiu a BTC — e ainda dá aula nela.
+      </h2>
+
+      <div class="mt-14 grid md:grid-cols-2 gap-8">
+        <article class="bg-sand-50 rounded-2xl overflow-hidden border border-ink-900/5">
+          <div class="aspect-[4/3] bg-ink-900 relative">
+            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Renato Arakaki" />
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-2xl font-semibold">Renato Arakaki</h3>
+            <p class="text-sm text-gold-600 font-medium mt-1">Co-fundador • Estratégia & Finanças</p>
+            <p class="mt-4 text-ink-700/80 text-sm">Engenheiro de formação, passou por consultoria estratégica antes de fundar a BTC. Hoje lidera os módulos de Finanças Corporativas e Valuation.</p>
+          </div>
+        </article>
+        <article class="bg-sand-50 rounded-2xl overflow-hidden border border-ink-900/5">
+          <div class="aspect-[4/3] bg-ink-900 relative">
+            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Rodrigo Areco" />
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-2xl font-semibold">Rodrigo Areco</h3>
+            <p class="text-sm text-gold-600 font-medium mt-1">Co-fundador • Estratégia & Marketing</p>
+            <p class="mt-4 text-ink-700/80 text-sm">Engenheiro com bagagem em marketing e gestão. Conduz os módulos de Estratégia, Modelagem de Negócios e Resolução de Problemas.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== O QUE FAZEMOS ============== -->
+  <section class="py-24 bg-ink-950 text-white relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-40"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="max-w-2xl">
+        <div class="text-xs font-semibold tracking-widest uppercase text-gold-400">O que fazemos</div>
+        <h2 class="mt-3 font-display text-4xl sm:text-5xl font-medium leading-tight">
+          Mais que cursos: um ecossistema para quem quer carreira de verdade.
+        </h2>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
+        <div class="bg-ink-950 p-8">
+          <div class="text-xs font-semibold tracking-widest uppercase text-gold-400">01</div>
+          <h3 class="mt-3 font-display text-2xl font-semibold">Treinamentos abertos</h3>
+          <p class="mt-3 text-sm text-white/70">GBP, SFP e Business Fundamentals — formação progressiva para jovens talentos.</p>
+        </div>
+        <div class="bg-ink-950 p-8">
+          <div class="text-xs font-semibold tracking-widest uppercase text-gold-400">02</div>
+          <h3 class="mt-3 font-display text-2xl font-semibold">Consultoria estratégica</h3>
+          <p class="mt-3 text-sm text-white/70">Projetos de gestão para grandes empresas e novos negócios — com a mesma metodologia da sala de aula.</p>
+        </div>
+        <div class="bg-ink-950 p-8">
+          <div class="text-xs font-semibold tracking-widest uppercase text-gold-400">03</div>
+          <h3 class="mt-3 font-display text-2xl font-semibold">BTC Headhunter</h3>
+          <p class="mt-3 text-sm text-white/70">Recrutamento de jovens talentos para empresas que confiam no nosso filtro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTATO / CTA ============== -->
+  <section id="contato" class="py-24 bg-sand-100">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10">
+      <div class="bg-white rounded-3xl p-10 sm:p-14 grid md:grid-cols-2 gap-10 items-center border border-ink-900/5">
+        <div>
+          <div class="text-xs font-semibold tracking-widest uppercase text-gold-600">Vamos conversar</div>
+          <h2 class="mt-3 font-display text-4xl font-medium leading-tight">
+            Pronto para destravar sua carreira?
+          </h2>
+          <p class="mt-4 text-ink-700/80">
+            Fale com nosso time. Te ajudamos a entender qual programa faz mais sentido para o seu momento.
+          </p>
+        </div>
+        <form class="space-y-3">
+          <input type="text" placeholder="Seu nome" class="w-full bg-sand-50 border border-ink-900/10 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-gold-500" />
+          <input type="email" placeholder="Seu e-mail" class="w-full bg-sand-50 border border-ink-900/10 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-gold-500" />
+          <select class="w-full bg-sand-50 border border-ink-900/10 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-gold-500">
+            <option>Tenho interesse em…</option>
+            <option>General Business Program</option>
+            <option>Strategy & Finance Program</option>
+            <option>Business Fundamentals</option>
+            <option>Treinamento In Company</option>
+          </select>
+          <button type="button" class="w-full bg-ink-950 hover:bg-ink-800 text-white font-semibold py-3 rounded-md transition">
+            Quero ser contatado
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="bg-ink-950 text-white/70">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white text-ink-950 font-display font-bold">B</span>
+          <span class="font-display font-semibold text-lg text-white">BTC<span class="text-gold-500">.</span></span>
+        </div>
+        <p class="mt-5 max-w-md text-sm">
+          Business Training Company. Escola de negócios fundada em 2009 por Renato Arakaki e Rodrigo Areco. Mais de 11.500 alunos formados.
+        </p>
+      </div>
+      <div>
+        <div class="text-white font-semibold text-sm">Cursos</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="gbp.html" class="hover:text-gold-400">GBP — General Business Program</a></li>
+          <li><a href="#" class="hover:text-gold-400">Strategy & Finance</a></li>
+          <li><a href="#" class="hover:text-gold-400">Business Fundamentals</a></li>
+          <li><a href="#" class="hover:text-gold-400">In Company</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-white font-semibold text-sm">BTC</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="sobre-a-btc.html" class="hover:text-gold-400">Sobre a BTC</a></li>
+          <li><a href="#" class="hover:text-gold-400">Alumni</a></li>
+          <li><a href="#" class="hover:text-gold-400">Headhunter</a></li>
+          <li><a href="#contato" class="hover:text-gold-400">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs">
+        <span>© 2026 BTC — Business Training Company. Todos os direitos reservados.</span>
+        <div class="flex gap-5">
+          <a href="#" class="hover:text-gold-400">Termos</a>
+          <a href="#" class="hover:text-gold-400">Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
